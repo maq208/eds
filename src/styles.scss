@@ -1,1 +1,231 @@
 /* You can add global styles to this file, and also import other style files */
+
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html{
+    overflow: hidden;
+    background-color: #e6e6f2;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 8%;
+    left: 3%;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+  footer {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  footer a {
+    display: flex;
+    align-items: center;
+  }
+
+  .router-outlet-container{
+    margin-top: 10%;
+    overflow-y: scroll;
+    max-height: 443px;
+    padding-bottom: 110px;
+}
+
+.menu {
+  list-style-type: none;
+  background-color: black;
+  color: whitesmoke;
+  width: 83%;
+  padding-left: 5%;
+  border-radius: 10px;
+  margin-left: -6px;
+  height: 50px;
+}
+
+.logo{
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.52);
+}
+
+.logo:hover{
+  transform: scale(1.1);
+}
+  
+/* Styles for the main menu */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+}
+
+a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #9B7790;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #B27AFF;
+  background-color: #000000;
+  font-size: 17px;
+  border-right: 1px solid #9B7790;
+  border-left: 1px solid #9B7790;
+}
+
+/* Styles for submenus */
+ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000000;
+  padding: 0;
+}
+
+ul li:hover > ul {
+  display: inherit;
+}
+
+ul ul li {
+  width: 250px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 200px;
+}
+
+/* Styles for active menu item */
+li.current-menu-item > a {
+  background-color: #333;
+  color: #fff;
+}
+
+.contact{
+  border: 2px solid #903FFF;
+  border-radius: 10px;
+  float: right;
+  top: 4px;
+  margin-right: 20px;
+
+  :hover{
+    transform: scale(1.1);
+  }
+}
+
+/* Styles for serices wizard */
+.card-wizard {
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-left: 8%;
+}
+
+.card {
+  background-color: #fff;
+  margin: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-height: 150px;
+  border: 3px solid navy;
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.32);
+  transition: all 0.3s ease-in-out;
+  animation: zoomIn 2s;
+  padding: 10px 10px 10px 15px;
+
+  .card-content {
+    // text-align: center;
+    margin-left: 15%;
+
+    h3 {
+      color: #333;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 2px;
+    }
+  }
+}
+
+  .card:hover {
+      transform: scale(1.1);
+      // box-shadow: 0 8px 20px rgba(0, 0, 0, 0.52);
+      // animation: bounce 2s;
+  }
+
+  .pageHeader{
+    margin-top: 10px;
+    margin-left: 10%;
+    color: #B27AFF;
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    width: 40%;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+    animation: bounce 2s;
+
+    :hover{
+      transform: scale(1.1);
+    }
+
+    span{
+      margin-left: 39%;
+    }
+
+   
+}
